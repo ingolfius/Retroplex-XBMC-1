@@ -1,0 +1,55 @@
+<colors>
+	<color name="title">ffffffff</color>
+	<color name="data">ff6aa6cb</color>
+	<color name="text">ffffffff</color>
+	
+	<color name="Color0">FFebebeb</color>
+	<color name="Color1">ffffffff</color>
+	<color name="Color2">ff6aa6cb</color>
+	<color name="Color3">ffcacaca</color>
+	<color name="Color4">FF696a6c</color>
+	<color name="Color5">FF000000</color>
+	<color name="Color6">FF393939</color>
+	<color name="Color7">FFebebeb</color>
+	<color name="Color8">FF4b4b4b</color>
+	<color name="ProgressSlider">ff6bff64</color>
+	
+	<color name="Focused">FF111111</color>
+	<color name="Disabled">ff9a9a9a</color>
+	<color name="Selected">ff16871e</color>
+	<!-- NOSTALGIA COLORS -->
+	<color name="orange">ffCD3700</color>
+	
+	<color name="BackgroundColor">ff141414</color>
+	<color name="semiBlack">ff141414</color>
+	<color name="darkGrey">ff1A1A1A</color>
+	<color name="ivoryBlack">ff292421</color>
+	<color name="deepRed">ff110000</color>
+	<color name="pink1">ffFF3E96</color>
+	<color name="violet1">ffE066FF</color>
+	<color name="violet2">ffAB82FF</color>
+	<color name="greenlime">ffC0FF3E</color>
+	<color name="greenlimelight">ffC6E090</color>
+	<color name="greenolive">ff8E8E38</color>
+	<color name="chocolate">ff403927</color>
+	<color name="superRed">ffdc3e24</color>
+	<color name="veryRed">ff9f1d04</color>
+	<color name="theRed">ffef4123</color>
+	<color name="darkRed">ff9f1b04</color>
+	<color name="oldBlue">ff7b9da7</color>
+	<color name="oldBlueLight">ff7FB6D4</color>
+	<color name="oldBlue2">FF78A8C0</color>
+	<color name="oldGreyLight">FFa5a6a5</color>
+	<color name="lagoon">ff86D9CF</color>
+	<color name="lavender">ff917081</color>
+	<color name="blue1">ff388099</color>
+	<color name="red1">FFC41026</color>
+	<color name="lila1">FFA09A97</color>
+	<color name="lila2">FF9c908a</color>
+	<color name="ivory1">ffFFFFF0</color>
+	<color name="ivory2">ffEEEEE0</color>
+	<color name="ivory3">ffCDCDC1</color>
+	<color name="ivory4">ffF5F5DC</color>
+	
+	<color name="test">ff8E8E38</color>
+</colors>

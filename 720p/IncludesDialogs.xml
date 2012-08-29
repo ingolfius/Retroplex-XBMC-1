@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<includes>
+	<!-- DIALOG INCLUDES -->
+	<include name="dialogWindow">
+		<texture border="60">dialogs/bigbg3.png</texture>
+	</include>
+	<include name="dialogWindow2">
+		<texture border="60">dialogs/bigbg4.png</texture>
+	</include>
+	<include name="dialogWindow3">
+		<texture border="100">dialogs/bigbg6.png</texture>
+	</include>
+	<include name="contextMenuButton">
+		<font>qlassikSmallBold2</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<focusedcolor>ivory1</focusedcolor>
+		<texturefocus border="20">dialogs/list-focus.png</texturefocus>		
+		<shadowcolor>ff444444</shadowcolor>
+		<height>40</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<textoffsety>3</textoffsety>
+		<textoffsetx>25</textoffsetx>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogLabel">
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>10</textoffsety>
+		<height>40</height>
+		<align>left</align>
+		<aligny>-</aligny>
+		<font>qlassikSmallBold2</font>
+		<textcolor>Color1</textcolor>
+	</include>
+	<include name="dialogHeading">
+		<posx>34</posx>
+		<posy>28</posy>
+		<font>lobsterMediumSmall</font>
+		<align>center</align>
+		<aligny>center</aligny>
+		<height>30</height>
+		<textcolor>ivory2</textcolor>
+		<shadowcolor>ff555555</shadowcolor>
+		<scroll>false</scroll>
+	</include>
+	<include name="dialogLine">
+		<posx>34</posx>
+		<height>22</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>qlassikSmallBold2</font>
+		<textcolor>Color1</textcolor>
+		<scroll>false</scroll>
+	</include>
+	<include name="dialogButton">
+		<width>120</width>
+		<height>42</height>
+		<font>qlassikSmallBold2</font>
+		<align>center</align>
+		<aligny>-</aligny>
+		<textoffsety>9</textoffsety>
+		<texturenofocus border="20">dialogs/buttonD.png</texturenofocus>
+		<texturefocus border="20">dialogs/buttonD-focus.png</texturefocus>
+		<textcolor>Color1</textcolor>
+		<focusedcolor>ivory1</focusedcolor>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogConfirmButton">
+		<width>120</width>
+		<height>42</height>
+		<font>qlassikSmallBold2</font>
+		<align>center</align>
+		<aligny>-</aligny>
+		<textoffsety>9</textoffsety>
+		<texturenofocus border="20">dialogs/buttonD.png</texturenofocus>
+		<texturefocus border="20,16,20,16">dialogs/buttonD-focus.png</texturefocus>
+		<textcolor>FF999999</textcolor>
+		<focusedcolor>ivory1</focusedcolor>
+		<shadowcolor>ff555555</shadowcolor>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogConfirmButton2">
+		<posy>26</posy>
+		<width>120</width>
+		<height>42</height>
+		<font>qlassikSmallBold2</font>
+		<align>center</align>
+		<aligny>-</aligny>
+		<textoffsety>9</textoffsety>
+		<texturenofocus border="20">dialogs/buttonD.png</texturenofocus>
+		<texturefocus border="20,16,20,16">dialogs/buttonD-focus.png</texturefocus>
+		<textcolor>FF999999</textcolor>
+		<focusedcolor>ivory1</focusedcolor>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogListButton">
+		<textcolor>FFFFFFFF</textcolor>
+		<shadowcolor>ff555555</shadowcolor>
+		<textoffsetx>15</textoffsetx>
+		<focusedcolor>ivory1</focusedcolor>
+		<font>qlassikSmallBold2</font>
+		<aligny>center</aligny>
+		<height>40</height>
+		<pulseonselect>false</pulseonselect>
+		<texturefocus border="10">dialogs/list-focus.png</texturefocus>
+		<texturenofocus border="3">dialogs/list-nofocus.png</texturenofocus>
+	</include>
+	<include name="dialogTextField">
+		<height>40</height>
+		<font>qlassikSmallBold2</font>
+		<align>center</align>
+		<textoffsety>5</textoffsety>
+		<texturenofocus border="10,0,10,0">dialogs/textField.png</texturenofocus>
+		<texturefocus border="10,0,10,0">dialogs/textFieldFocus.png</texturefocus>
+		<textcolor>FFFFFFFF</textcolor>
+		<shadowcolor>ff555555</shadowcolor>
+		<focusedcolor>ivory1</focusedcolor>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogRadio">
+		<textcolor>FFFFFFFF</textcolor>
+		<shadowcolor>ff555555</shadowcolor>
+		<focusedcolor>ivory1</focusedcolor>
+		<font>qlassikSmallBold2</font>
+		<texturefocus border="10">dialogs/list-focus.png</texturefocus>
+		<texturenofocus border="3">dialogs/list-nofocus.png</texturenofocus>
+		<textureradiofocus>dialogs/radioOn.png</textureradiofocus>
+		<textureradionofocus>dialogs/radioOff.png</textureradionofocus>
+		<radioheight>24</radioheight>
+		<radiowidth>48</radiowidth>
+	</include>
+	<include name="dialogSpin">
+		<textcolor>FFFFFFFF</textcolor>
+		<shadowcolor>ff555555</shadowcolor>
+		<textoffsetx>15</textoffsetx>
+		<focusedcolor>ivory1</focusedcolor>
+		<font>qlassikSmallBold2</font>
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>-3</textoffsety>
+		<aligny>center</aligny>
+		<height>40</height>
+		<texturefocus border="10">dialogs/list-focus.png</texturefocus>
+		<texturenofocus border="3">dialogs/list-nofocus.png</texturenofocus>
+		<textureup>settings/scrollUp-focus.png</textureup>
+		<texturedown>settings/scrollDown-focus.png</texturedown>
+		<textureupfocus>settings/scrollUp.png</textureupfocus>
+		<texturedownfocus>settings/scrollDown.png</texturedownfocus>
+		<reverse>yes</reverse>
+		<spinwidth>22</spinwidth>
+		<spinheight>44</spinheight>
+	</include>
+	<include name="dialogSlider">
+		<texturefocus border="10">dialogs/list-focus.png</texturefocus>
+		<texturenofocus border="3">dialogs/list-nofocus.png</texturenofocus>
+		<texturesliderbar border="10">dialogs/sliderBackground.png</texturesliderbar>
+		<textureslidernib border="0,9,0,9">dialogs/sliderNib.png</textureslidernib>
+		<textureslidernibfocus border="0,9,0,9">dialogs/sliderNib.png</textureslidernibfocus>
+		<font>qlassikSmallBold2</font>
+		<shadowcolor>ff555555</shadowcolor>
+		<height>40</height>
+		<textcolor>FFFFFFFF</textcolor>
+		<focusedcolor>ivory1</focusedcolor>
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>15</textoffsety>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogScroller">
+		<width>20</width>
+		<texturesliderbackground border="4,7,4,7">dialogScrollerBackground.png</texturesliderbackground>
+		<texturesliderbar border="4">scrollbar_bar.png</texturesliderbar>
+		<texturesliderbarfocus border="4">scrollbar_bar_focus.png</texturesliderbarfocus>
+		<textureslidernib>white.png</textureslidernib>
+		<textureslidernibfocus>-</textureslidernibfocus>
+		<orientation>vertical</orientation>
+	</include>
+	<include name="dialogSeparator">
+		<height>1</height>
+		<texture>dialogs/separator.png</texture>
+	</include>
+	<include name="keyboardButton">
+		<font>qlassikMedium1</font>
+		<texturenofocus border="5">-</texturenofocus>
+		<texturefocus border="5">dialogs/buttonD-focus.png</texturefocus>
+		<textcolor>FF222222</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<width>48</width>
+		<height>48</height>
+		<align>center</align>
+		<textoffsety>10</textoffsety>
+	</include>
+</includes>

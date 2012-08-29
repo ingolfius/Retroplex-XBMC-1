@@ -1,0 +1,190 @@
+<window id="12">
+	<defaultcontrol>888</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<include>Backgrounds</include>
+		<control type="image">
+			<posy>160</posy>
+			<posx>360</posx>
+			<width>850</width>
+			<height>450</height>
+			<include>transition2</include>
+			<texture border="100" flipy="true">settings/activesectionbgsansarrow.png</texture>
+		</control>
+		<include>retroOverlay</include>
+		<include>allscreens</include>
+		<!-- settings icons -->
+		<control type="image">
+			<height>200</height>
+			<posx>50</posx>
+			<posy>520</posy>
+			<aspectratio>keep</aspectratio>
+			<include>transition2</include>
+			<texture background="true">settings/system.png</texture>
+			<visible>Window.IsActive(systemsettings)</visible>
+		</control>
+		<control type="image">
+			<height>200</height>
+			<posx>50</posx>
+			<posy>520</posy>
+			<aspectratio>keep</aspectratio>
+			<include>transition2</include>
+			<texture background="true">settings/appearance.png</texture>
+			<visible>Window.IsActive(appearancesettings)</visible>
+		</control>
+		<control type="image">
+			<height>200</height>
+			<posx>50</posx>
+			<posy>520</posy>
+			<aspectratio>keep</aspectratio>
+			<include>transition2</include>
+			<texture background="true">settings/video.png</texture>
+			<visible>Window.IsActive(videossettings)</visible>
+		</control>
+		<control type="image">
+			<height>200</height>
+			<posx>50</posx>
+			<posy>520</posy>
+			<aspectratio>keep</aspectratio>
+			<include>transition2</include>
+			<texture background="true">settings/music.png</texture>
+			<visible>Window.IsActive(musicsettings)</visible>
+		</control>
+		<control type="image">
+			<height>200</height>
+			<posx>50</posx>
+			<posy>520</posy>
+			<aspectratio>keep</aspectratio>
+			<include>transition2</include>
+			<texture background="true">settings/pictures.png</texture>
+			<visible>Window.IsActive(picturessettings)</visible>
+		</control>
+		<control type="image">
+			<height>200</height>
+			<posx>50</posx>
+			<posy>520</posy>
+			<aspectratio>keep</aspectratio>
+			<include>transition2</include>
+			<texture background="true">settings/network.png</texture>
+			<visible>Window.IsActive(networksettings)</visible>
+		</control>
+		<!-- type separator -->
+		<control type="label">
+			<posx>355</posx>
+			<posy>105</posy>
+			<width>925</width>
+			<label>y</label>
+			<font>nymphetteMedium</font>
+			<textcolor>chocolate</textcolor>
+			<height>30</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<include>transition2</include>
+			<animation effect="fade" start="100" end="100" time="0" condition="true">Conditional</animation>
+		</control>
+		<!-- type separator -->
+		<control type="label">
+			<posx>355</posx>
+			<posy>630</posy>
+			<width>925</width>
+			<label>B</label>
+			<font>nymphetteMedium</font>
+			<textcolor>chocolate</textcolor>
+			<height>30</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<include>transition2</include>
+			<animation effect="fade" start="100" end="100" time="0" condition="true">Conditional</animation>
+		</control>
+		<control type="group">
+			<control type="label">
+				<include>settingsPageLabel</include>
+				<label>&#xB7; $LOCALIZE[10507] &#xB7;</label>
+				<visible>Window.IsActive(settings)</visible>
+			</control>
+			<control type="label">
+				<include>settingsPageLabel</include>
+				<label>&#xB7; $LOCALIZE[480] &#xB7;</label>
+				<visible>Window.IsActive(appearancesettings)</visible>
+			</control>
+			<control type="label">
+				<include>settingsPageLabel</include>
+				<label>&#xB7; $LOCALIZE[157] &#xB7;</label>
+				<visible>Window.IsActive(videossettings)</visible>
+			</control>
+			<control type="label">
+				<include>settingsPageLabel</include>
+				<label>&#xB7; $LOCALIZE[0] &#xB7;</label>
+				<visible>Window.IsActive(programssettings)</visible>
+			</control>
+			<control type="label">
+				<include>settingsPageLabel</include>
+				<label>&#xB7; $LOCALIZE[2] &#xB7;</label>
+				<visible>Window.IsActive(musicsettings)</visible>
+			</control>
+			<control type="label">
+				<include>settingsPageLabel</include>
+				<label>&#xB7; $LOCALIZE[1] &#xB7;</label>
+				<visible>Window.IsActive(picturessettings)</visible>
+			</control>
+			<control type="label">
+				<include>settingsPageLabel</include>
+				<label>&#xB7; $LOCALIZE[705] &#xB7;</label>
+				<visible>Window.IsActive(networksettings)</visible>
+			</control>
+			<control type="label">
+				<include>settingsPageLabel</include>
+				<label>&#xB7; $LOCALIZE[13000] &#xB7;</label>
+				<visible>Window.IsActive(systemsettings)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<control type="grouplist" id="3">
+				<description>button area</description>
+				<posx>20</posx>
+				<posy>200</posy>
+				<height>400</height>
+				<itemgap>0</itemgap>
+				<onleft>-</onleft>
+				<onright>5</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<include>transition2</include>
+				<visible>!Window.IsActive(progressdialog)</visible>
+			</control>
+			<control type="grouplist" id="5">
+				<description>control area</description>
+				<posx>415</posx>
+				<posy>200</posy>
+				<width>783</width>
+				<height>595</height>
+				<itemgap>0</itemgap>
+				<onleft>3</onleft>
+				<onright>-</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<include>transition2</include>
+				<visible>!Window.IsActive(progressdialog)</visible>
+			</control>
+			<control type="button" id="7">
+				<description>Default Button</description>
+				<include>MenuSubSettingsButton</include>
+			</control>
+			<control type="radiobutton" id="8">
+				<description>Default RadioButton</description>
+				<include>MenuSubSettingsButton</include>
+			</control>
+			<control type="spincontrolex" id="9">
+				<description>Default SpinControlex</description>
+				<colordiffuse>Color1</colordiffuse>
+				<include>MenuSubSettingsSpincontrol</include>
+			</control>
+			<control type="button" id="10">
+				<description>Default Category Button</description>
+				<label>[UPPERCASE]224[/UPPERCASE]</label>
+				<include>settingsLeftMenuFormat</include>
+			</control>
+		</control>
+		<include>RetroplexLogo</include>
+	</controls>
+</window>

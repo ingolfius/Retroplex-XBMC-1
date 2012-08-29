@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<window id="1">
+	<defaultcontrol always="true">555</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<backgroundcolor>0</backgroundcolor>
+	<previouswindow>Home</previouswindow>
+	<views>555</views>
+	<controls>
+		<include>Backgrounds</include>
+		<include>plotBoxesLibrary</include>
+		<include>listMenuFocusedBg</include>
+		<include>frameOverlay</include>
+		<include>leftMenuBg</include>
+		<include>retroOverlay</include>
+		<include>leftMenuDressing</include>
+		<include>transition2</include>
+		<include>contextMenuHide</include>
+		<include>allscreens</include>
+		<include>PageLabels</include>
+		<include>LeftSideMenu</include>
+		<include>view_List</include>
+		<control type="group">
+			<include>ListLeftMenuSlide</include>
+			<!-- vertical separator -->
+			<control type="group">
+				<animation effect="fade" start="100" end="20" time="350" condition="Control.HasFocus(40) | Control.HasFocus(1110) | Control.HasFocus(1140) | Control.HasFocus(1150) | Control.HasFocus(1160)">Conditional</animation>
+				<control type="image">
+					<posx>745</posx>
+					<posy>-200</posy>
+					<height>1120</height>
+					<width>29</width>
+					<texture flipx="true">settings/separator.png</texture>
+					<aspectratio align="right">stretch</aspectratio>
+					<include>transition2</include>
+					<include>contextMenuHide</include>
+					<include>infoDialogHide</include>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

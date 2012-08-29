@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<window id="2">
+	<defaultcontrol always="false">572</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<backgroundcolor>0</backgroundcolor>
+	<views>572,555</views>
+	<controls>
+		<include>Backgrounds</include>
+		<include>listMenuFocusedBg</include>
+		<include>frameOverlay</include>		
+		<include>leftMenuBg</include>
+		<include>retroOverlay</include>		
+		<include>view_PhotoWall</include>	
+		<include>leftMenuDressing</include>
+		<include>PhotosLeftSideMenu</include>
+		<include>transition2</include>
+		<include>PageLabels</include>
+		<!-- FAKE INFO BUTTON -->
+		<control type="button" id="8000">
+			<label>SHOULD NOT SEE ME</label>
+			<onup>53</onup>
+			<ondown>53</ondown>
+			<onleft>53</onleft>
+			<onright>53</onright>
+			<width>200</width>
+			<visible allowhiddenfocus="true">false</visible>
+		</control>
+		<include>allscreens</include>
+	</controls>
+</window>

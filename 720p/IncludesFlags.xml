@@ -6,56 +6,56 @@
 			<itemgap>15</itemgap>
 			<orientation>horizontal</orientation>
 			<control type="image">
-				<width min="1" max="100">auto</width>
-				<height>15</height>
-				<texture>$INFO[ListItem.VideoResolution]</texture>
+				<width min="1" max="90">auto</width>
+				<height>25</height>
+				<texture>$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory3</colordiffuse>
 				<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 			</control>
 			<control type="image">
-				<width min="1" max="100">auto</width>
-				<height>15</height>
-				<texture>$INFO[ListItem.VideoAspect]</texture>
+				<width min="1" max="90">auto</width>
+				<height>25</height>
+				<texture>$INFO[ListItem.VideoAspect,flags/aspect/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory3</colordiffuse>
 				<visible>!IsEmpty(ListItem.VideoAspect)</visible>
 			</control>
 			<control type="image">
-				<width min="1" max="100">auto</width>
-				<height>15</height>
+				<width min="1" max="90">auto</width>
+				<height>25</height>
 				<texture>$INFO[Listitem.Property(mediaTag::videoFrameRate)]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory3</colordiffuse>
 				<visible>!IsEmpty(Listitem.Property(mediaTag::videoFrameRate))</visible>
 			</control>
 			<control type="image">
-				<width min="1" max="100">auto</width>
-				<height>15</height>
-				<texture>$INFO[ListItem.VideoCodec]</texture>
+				<width min="1" max="90">auto</width>
+				<height>25</height>
+				<texture>$INFO[ListItem.VideoCodec,flags/type/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory3</colordiffuse>
 				<visible>!IsEmpty(ListItem.VideoCodec)</visible>
 			</control>
 			<control type="image">
-				<width min="1" max="100">auto</width>
-				<height>15</height>
-				<texture>$INFO[ListItem.AudioCodec]</texture>
+				<width min="1" max="90">auto</width>
+				<height>25</height>
+				<texture>$INFO[ListItem.AudioCodec,flags/type/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory3</colordiffuse>
 				<visible>!IsEmpty(ListItem.AudioCodec)</visible>
 			</control>
 			<control type="image">
-				<width min="1" max="100">auto</width>
-				<height>15</height>
-				<texture>$INFO[ListItem.AudioChannels]</texture>
+				<width min="1" max="90">auto</width>
+				<height>25</height>
+				<texture>$INFO[ListItem.AudioChannels,flags/audiochannels/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory3</colordiffuse>
 				<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 			</control>
 			<control type="image">
-				<width min="1" max="100">auto</width>
-				<height>17</height>
+				<width min="1" max="90">auto</width>
+				<height>27</height>
 				<texture>$INFO[ListItem.Mpaa,flags/contentrating/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory3</colordiffuse>
@@ -69,23 +69,23 @@
 			<orientation>horizontal</orientation>
 			<control type="image">
 				<width min="1" max="100">auto</width>
-				<height>17</height>
-				<texture>$INFO[ListItem.VideoResolution]</texture>
+				<height>27</height>
+				<texture>$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory1</colordiffuse>
 				<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 			</control>
 			<control type="image">
 				<width min="1" max="100">auto</width>
-				<height>17</height>
-				<texture>$INFO[ListItem.VideoAspect]</texture>
+				<height>27</height>
+				<texture>$INFO[ListItem.VideoAspect,flags/aspect/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory1</colordiffuse>
 				<visible>!IsEmpty(ListItem.VideoAspect)</visible>
 			</control>
 			<control type="image">
 				<width min="1" max="100">auto</width>
-				<height>17</height>
+				<height>27</height>
 				<texture>$INFO[Listitem.Property(mediaTag::videoFrameRate)]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory1</colordiffuse>
@@ -93,24 +93,24 @@
 			</control>
 			<control type="image">
 				<width min="1" max="100">auto</width>
-				<height>17</height>
-				<texture>$INFO[ListItem.VideoCodec]</texture>
+				<height>27</height>
+				<texture>$INFO[ListItem.VideoCodec,flags/type/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory1</colordiffuse>
 				<visible>!IsEmpty(ListItem.VideoCodec)</visible>
 			</control>
 			<control type="image">
 				<width min="1" max="100">auto</width>
-				<height>17</height>
-				<texture>$INFO[ListItem.AudioCodec]</texture>
+				<height>27</height>
+				<texture>$INFO[ListItem.AudioCodec,flags/type/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory1</colordiffuse>
 				<visible>!IsEmpty(ListItem.AudioCodec)</visible>
 			</control>
 			<control type="image">
 				<width min="1" max="100">auto</width>
-				<height>17</height>
-				<texture>$INFO[ListItem.AudioChannels]</texture>
+				<height>27</height>
+				<texture>$INFO[ListItem.AudioChannels,flags/audiochannels/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory1</colordiffuse>
 				<visible>!IsEmpty(ListItem.AudioChannels)</visible>
@@ -121,7 +121,7 @@
 				<texture>$INFO[ListItem.Mpaa,flags/contentrating/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory1</colordiffuse>
-				<visible>!IsEmpty(ListItem.Mpaa )</visible>
+				<visible>!IsEmpty(ListItem.Mpaa)</visible>
 			</control>
 		</control>
 	</include>
@@ -136,11 +136,11 @@
 	</include>
 	<include name="studioFlagSmall">
 	<control type="image">
-		<width>130</width>
-		<height>64</height>
+		<width>140</width>
+		<height>164</height>
 		<aspectratio align="center">keep</aspectratio>
 		<colordiffuse>ivory3</colordiffuse>
-		<texture>$INFO[ListItem.Studio]</texture>
+		<texture>$INFO[ListItem.Studio,flags/studios/,.png]</texture>
 	</control>
 	</include>
 	<!-- -->
@@ -442,7 +442,7 @@
 			<control type="image">
 				<width>56</width>
 				<height>64</height>
-				<texture>$INFO[Listitem.Property(mediaTag-videoFrameRate),flags/videoframerate/,.png]</texture>
+				<texture>$INFO[Listitem.videoFrameRate,flags/videoframerate/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory2</colordiffuse>
 				<visible>[Container.Content(movies) | Container.Content(episodes)] + !Skin.HasSetting(slidehideframerate)</visible>
@@ -474,7 +474,7 @@
 			<control type="image">
 				<width>76</width>
 				<height>64</height>
-				<texture>$INFO[ListItem.Mpaa ,flags/contentrating/,.png]</texture>
+				<texture>$INFO[ListItem.Mpaa,flags/contentrating/,.png]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>ivory2</colordiffuse>
 				<visible>Container.Content(movies) + !Skin.HasSetting(slidehidecontentrating)</visible>
@@ -555,7 +555,7 @@
 				<control type="image">
 					<width>47</width>
 					<height>64</height>
-					<texture>$INFO[Listitem.Property(mediaTag-videoFrameRate),flags/videoframerate/,.png]</texture>
+					<texture>$INFO[Listitem.videoFrameRate,flags/videoframerate/,.png]</texture>
 					<aspectratio align="center">keep</aspectratio>
 					<colordiffuse>ivory3</colordiffuse>
 					<visible>[Container.Content(movies) | Container.Content(episodes)] + !Skin.HasSetting(slidehideframerate)</visible>

@@ -32,7 +32,7 @@
 					<control type="image">
 						<posx>-20</posx>
 						<posy>37</posy>
-						<height>213</height>
+						<height>230</height>
 						<width>520</width>
 						<texture border="30">backgrounds/boxbeigeshadowbottom2.png</texture>
 						<aspectratio>stretch</aspectratio>
@@ -172,7 +172,7 @@
 		<aligny>top</aligny>
 		<label>$INFO[ListItem.Plot]</label>
 		<textcolor>ivory2</textcolor>
-		<font>titilliumMedium</font>
+		<font>lobsterSmall3</font>
 		<shadowcolor>ff333333</shadowcolor>
 	</include>
 	<include name="listMenu">
@@ -554,8 +554,8 @@
 				<visible>Control.IsVisible(555)</visible>
 				<!-- poster/thumb -->
 				<control type="image">
-					<posx>760</posx>
-					<posy>69</posy>
+					<posx>910</posx>
+					<posy>1</posy>
 					<width>262</width>
 					<height>392</height>
 					<include>ListFocusedBorder</include>
@@ -723,10 +723,10 @@
 				<control type="group">
 					<control type="group">
 						<control type="group">
-							<posx>785</posx>
-							<posy>663</posy>
+							<posx>755</posx>
+							<posy>679</posy>
 							<include>mediaFlagsSmall</include>
-							<visible>Container.Content(movies) + !Skin.HasSetting(hidemovielistflags)</visible>
+							<visible>Container.Content(movies) + Skin.HasSetting(hidemovielistflags)</visible>
 						</control>
 						<control type="group">
 							<posx>1135</posx>
@@ -735,8 +735,8 @@
 							<visible>[Container.Content(movies) + !Skin.HasSetting(hidemovieratings)] | [[Container.Content(tvshows)] + !Skin.HasSetting(hidetvratings)]</visible>
 						</control>
 						<control type="group">
-							<posx>1075</posx>
-							<posy>349</posy>
+							<posx>765</posx>
+							<posy>299</posy>
 							<include>studioFlagSmall</include>
 						</control>
 						<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
@@ -750,10 +750,10 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>1019</posx>
+				<posx>1119</posx>
 				<posy>332</posy>
-				<width>180</width>
-				<height>180</height>
+				<width>80</width>
+				<height>80</height>
 				<include>transition2</include>
 				<include>infoDialogHide</include>
 				<include>contextMenuHide</include>

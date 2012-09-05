@@ -3,6 +3,31 @@
 	<fontset id="Default" unicode="true">
 		<!-- UPDATED -->
 		<font>
+			<name>magnetoB</name>
+			<filename>MagnetoB.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>magnetoBbig</name>
+			<filename>MagnetoB.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
+			<name>magnetoBbigger</name>
+			<filename>MagnetoB.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>magnetoBig2</name>
+			<filename>MagnetoB.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>magnetoBbigger2</name>
+			<filename>MagnetoB.ttf</filename>
+			<size>24</size>
+		</font>
+		<font>
 			<name>dejavutest</name>
 			<filename>DejaVuUniversal.ttf</filename>
 			<size>16</size>

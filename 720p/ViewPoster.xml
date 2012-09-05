@@ -192,7 +192,7 @@
 						<posy>232</posy>
 						<width>48</width>
 						<height>18</height>
-						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
+						<texture>$INFO[Listitem.VideoResolution,flags/biglistresolution/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 						<visible>Skin.HasSetting(enablehdflags)</visible>
 					</control>
@@ -236,11 +236,11 @@
 						<visible>!Skin.HasSetting(overlayTVSHows) + Container.Content(seasons)</visible>
 					</control>
 					<control type="image">
-						<posx>22</posx>
+						<posx>12</posx>
 						<posy>232</posy>
-						<width>48</width>
-						<height>18</height>
-						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
+						<width>98</width>
+						<height>48</height>
+						<texture>$INFO[Listitem.VideoResolution,flags/biglistresolution/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 						<visible>[Skin.HasSetting(onlyfocusflagpanel) | Skin.HasSetting(enablehdflags)]</visible>
 					</control>
@@ -304,8 +304,17 @@
 			<!-- studio flags, optional -->
 			<control type="group">
 				<posx>200r</posx>
-				<posy>630</posy>
+				<posy>580</posy>
 				<include>studioFlagSmall</include>
+				<include>transition3</include>
+				<include>contextMenuHide</include>
+				<include>infoDialogHide</include>
+				<visible>Control.IsVisible(57) + !IsEmpty(ListItem.Title) + Skin.HasSetting(thumbnailsshowstudioflag)</visible>
+			</control>
+			<control type="group">
+				<posx>450</posx>
+				<posy>670</posy>
+				<include>mediaFlagsSmall</include>
 				<include>transition3</include>
 				<include>contextMenuHide</include>
 				<include>infoDialogHide</include>
@@ -388,7 +397,7 @@
 						<posy>168</posy>
 						<width>48</width>
 						<height>18</height>
-						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
+						<texture>$INFO[Listitem.VideoResolution,flags/biglistresolution/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 						<visible>Skin.HasSetting(enablehdflags)</visible>
 						<animation effect="fade" start="100" end="90" time="0" condition="true">Conditional</animation>
@@ -414,7 +423,7 @@
 						<aspectratio scalediffuse="false" align="center">scale</aspectratio>
 						<texture diffuse="frames/bigPosterMask.png" background="true">$INFO[ListItem.Thumb]</texture>
 						<include>PostersFocusedBorder2</include>
-						<visible>Container.Content(movies) + Window.IsActive(24)</visible>
+						<visible>Container.Content(movies)</visible>
 					</control>
 					<control type="image">
 						<posx>119</posx>
@@ -426,11 +435,11 @@
 						<animation effect="fade" start="100" end="90" time="0" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>23</posx>
-						<posy>168</posy>
-						<width>48</width>
-						<height>18</height>
-						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
+						<posx>13</posx>
+						<posy>158</posy>
+						<width>78</width>
+						<height>38</height>
+						<texture>$INFO[Listitem.VideoResolution,flags/biglistresolution/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 						<visible>Skin.HasSetting(enablehdflags)</visible>
 						<animation effect="fade" start="100" end="90" time="0" condition="true">Conditional</animation>
@@ -453,7 +462,7 @@
 						<label>$INFO[ListItem.Title]</label>
 						<textcolor>oldBlueLight</textcolor>
 						<shadowcolor>ff222222</shadowcolor>
-						<font>lobsterMedium</font>
+						<font>magnetoBbigger2</font>
 						<height>30</height>
 						<scroll>true</scroll>
 						<scrollspeed>40</scrollspeed>
@@ -501,13 +510,13 @@
 					</control>
 					<control type="label" id="1">
 						<width min="10" max="460">auto</width>
-						<label>[COLOR=oldBlue]$LOCALIZE[572] :[/COLOR] $INFO[Listitem.Property(mediaTag-Studio)]</label>
+						<label>[COLOR=oldBlue]$LOCALIZE[572] :[/COLOR] $INFO[Listitem.Studio]</label>
 						<textcolor>ivory2</textcolor>
 						<shadowcolor>ff333333</shadowcolor>
 						<font>qlassikMedium1</font>
 						<scroll>true</scroll>
 						<scrollspeed>40</scrollspeed>
-						<visible>!IsEmpty(Listitem.Property(mediaTag-Studio)) + Container.Content(movies)</visible>
+						<visible>!IsEmpty(Listitem.Studio) + Container.Content(movies)</visible>
 					</control>
 					<control type="label" id="1">
 						<width>450</width>
@@ -586,7 +595,7 @@
 						<visible>Control.IsVisible(571) + [Container.Content(movies)]</visible>
 						<control type="textbox" id="8">
 							<width>450</width>
-							<height>281</height>
+							<height>261</height>
 							<align>left</align>
 							<label>$INFO[ListItem.Plot]</label>
 							<textcolor>ivory2</textcolor>
@@ -647,22 +656,22 @@
 						<height>45</height>
 						<align>right</align>
 						<colordiffuse>ivory3</colordiffuse>
-						<texture>$INFO[Listitem.Property(mediaTag::Studio)]</texture>
+						<texture>$INFO[Listitem.Studio]</texture>
 						<aspectratio align="right">keep</aspectratio>
 					</control>
 				</control>
 				<!-- flags movies -->
 				<control type="group">
-					<posx>785</posx>
+					<posx>755</posx>
 					<posy>635</posy>
-					<visible>Control.IsVisible(571) + [Container.Content(movies)] + !Skin.HasSetting(hidemovielistflags)</visible>
+					<visible>Control.IsVisible(571) + [Container.Content(movies)] + Skin.HasSetting(hidemovielistflags)</visible>
 					<include>transition2</include>
 					<include>infoDialogHide</include>
 					<include>contextMenuHide</include>
 					<include>mediaFlagsSmall</include>
 				</control>
 				<control type="group">
-					<posx>1135</posx>
+					<posx>1105</posx>
 					<posy>320</posy>
 					<include>ratingStarsSmall</include>
 					<visible>Control.IsVisible(571) + [Container.Content(movies)] + !Skin.HasSetting(hidemovieratings)</visible>

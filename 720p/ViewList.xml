@@ -407,7 +407,7 @@
 					<control type="image">
 						<posx>720</posx>
 						<posy>17</posy>
-						<include>watchedOverlaySmall</include>
+						<include>watchedOverlay</include>
 						<visible>[Container.Content(movies) + Skin.HasSetting(overlayMovies)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(overlayTVShows)]</visible>
 						<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 					</control>
@@ -429,8 +429,8 @@
 						<visible>Container.Content(movies)</visible>
 					</control>
 					<control type="image">
-						<posx>720</posx>
-						<posy>76</posy>
+						<posx>712</posx>
+						<posy>66</posy>
 						<include>watchedOverlaySmall</include>
 						<visible>[Container.Content(movies) + Skin.HasSetting(overlayMovies)] | [[Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(overlayTVShows)]</visible>
 						<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
@@ -542,7 +542,7 @@
 					<include>focus_Banner</include>
 					<texture>$INFO[ListItem.VideoResolution,flags/biglistresolution/,.png]</texture>
 					<aspectratio align="right">keep</aspectratio>
-					<visible>Skin.HasSetting(enableepisodehdflags) + Container.Content(episodes)</visible>
+					<visible>!Skin.HasSetting(enableepisodehdflags) + Container.Content(episodes)</visible>
 				</control>
 			</control>
 			<!-- right side posters & plot -->
@@ -739,7 +739,27 @@
 							<posy>299</posy>
 							<include>studioFlagSmall</include>
 						</control>
-						<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+						<visible>Container.Content(movies) + Skin.HasSetting(hidemovielistflags)</visible>
+					</control>
+					<control type="group">
+						<control type="group">
+							<posx>755</posx>
+							<posy>679</posy>
+							<include>mediaFlagsSmall</include>
+							<visible>Container.Content(tvshows) + Skin.HasSetting(hidemovielistflags)</visible>
+						</control>
+						<control type="group">
+							<posx>1135</posx>
+							<posy>479</posy>
+							<include>ratingStarsSmall</include>
+							<visible>[Container.Content(movies) + !Skin.HasSetting(hidemovieratings)] | [[Container.Content(tvshows)] + !Skin.HasSetting(hidetvratings)]</visible>
+						</control>
+						<control type="group">
+							<posx>785</posx>
+							<posy>319</posy>
+							<include>studioFlagSmall0</include>
+						</control>
+						<visible>Container.Content(tvshows) + Skin.HasSetting(hidemovielistflags)</visible>
 					</control>
 					<control type="group">
 						<posx>785</posx>
@@ -747,11 +767,22 @@
 						<include>mediaFlagsSmall</include>
 						<visible>Container.Content(episodes) + Skin.HasSetting(showepisodemediaflags)</visible>
 					</control>
+					<control type="grouplist">
+						<description>Media Codec Flagging Images</description>
+						<posx>1180</posx>
+						<posy>359</posy>
+						<width min="1" max="80">auto</width>
+						<height>50</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<aspectratio>keep</aspectratio>
+						<include>VideoMPAAFlaggingConditions</include>
+					</control>
 				</control>
 			</control>
 			<control type="image">
-				<posx>1119</posx>
-				<posy>332</posy>
+				<posx>1000</posx>
+				<posy>362</posy>
 				<width>80</width>
 				<height>80</height>
 				<include>transition2</include>

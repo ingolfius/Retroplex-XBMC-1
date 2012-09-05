@@ -28,6 +28,7 @@
 	<include file="FilesMenu.xml">-</include>
 	<include file="InfoDialogMenu.xml">-</include>
 	<include file="IncludesFlags.xml">-</include>
+	<include file="IncludesCodecFlagging.xml">-</include>
 	<include file="IncludesPageLabels.xml">-</include>
 	<include file="IncludesAnimations.xml">-</include>
 	<include file="IncludesDialogs.xml">-</include>
@@ -765,14 +766,14 @@
 		<visible>Skin.HasSetting(scrollIndicators)</visible>
 	</include>-->
 	<include name="watchedOverlay">
-		<width>26</width>
-		<height>26</height>
+		<width>16</width>
+		<height>16</height>
 		<texture>$INFO[ListItem.Overlay]</texture>
 		<visible>[Container.Content(movies) + Skin.HasSetting(overlayMovies)] | [Container.Content(tvshows) + Skin.HasSetting(overlayTVShows)] | [Container.Content(episodes) + Skin.HasSetting(overlayEpisodes)] | [Container.Content(seasons) + Skin.HasSetting(overlayTVShows)] | Window.IsVisible(VideoFiles)</visible>
 	</include>
 	<include name="watchedOverlaySmall">
-		<width>18</width>
-		<height>18</height>
+		<width>38</width>
+		<height>38</height>
 		<texture>$INFO[ListItem.Overlay]</texture>
 		<visible>[Container.Content(movies) + Skin.HasSetting(overlayMovies)] | [Container.Content(tvshows) + Skin.HasSetting(overlayTVShows)] | [Container.Content(episodes) + Skin.HasSetting(overlayEpisodes)] | [Container.Content(seasons) + Skin.HasSetting(overlayTVShows)] | Window.IsVisible(VideoFiles)</visible>
 	</include>

@@ -129,6 +129,6 @@
 		<include>nowPlayingBottomWide</include>
 		<!-- HELP -->
 		<include>RetroplexHelp</include>
-		
+                <include>HomeRecentlyAddedInfo</include>
 	</controls>
 </window>

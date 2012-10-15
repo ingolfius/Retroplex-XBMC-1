@@ -52,7 +52,7 @@
 			<onup>300</onup>
 			<ondown>300</ondown>
 			<onleft>9000</onleft>
-			<onright>5000</onright>
+			<onright>9020</onright>
 			<focusposition>4</focusposition>
 			<scrolltime>300</scrolltime>
 			<include>transition2</include>

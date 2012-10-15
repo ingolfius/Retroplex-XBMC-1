@@ -762,7 +762,7 @@
 						<visible>Container.Content(tvshows) + Skin.HasSetting(hidemovielistflags)</visible>
 					</control>
 					<control type="group">
-						<posx>785</posx>
+						<posx>755</posx>
 						<posy>465</posy>
 						<include>mediaFlagsSmall</include>
 						<visible>Container.Content(episodes) + Skin.HasSetting(showepisodemediaflags)</visible>

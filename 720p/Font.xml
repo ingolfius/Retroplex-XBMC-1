@@ -28,6 +28,11 @@
 			<size>24</size>
 		</font>
 		<font>
+			<name>magnetoBbigger3</name>
+			<filename>MagnetoB.ttf</filename>
+			<size>36</size>
+		</font>
+		<font>
 			<name>dejavutest</name>
 			<filename>DejaVuUniversal.ttf</filename>
 			<size>16</size>

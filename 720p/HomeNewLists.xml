@@ -408,7 +408,7 @@
 					<control type="fixedlist" id="11001">
 						<visible allowhiddenfocus="false">false</visible>
 						<orientation>horizontal</orientation>
-						<ondown>7001</ondown>
+						<ondown>7002</ondown>
 						<onup>-</onup>
 						<onright>-</onright>
 						<onleft>300</onleft>
@@ -537,7 +537,7 @@
 						<visible allowhiddenfocus="false">false</visible>
 						<orientation>horizontal</orientation>
 						<ondown>-</ondown>
-						<onup>7002</onup>
+						<onup>7001</onup>
 						<onright>-</onright>
 						<onleft>300</onleft>
 						<posx>-14</posx>

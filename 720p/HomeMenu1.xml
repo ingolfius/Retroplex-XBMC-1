@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<includes>
+	<!-- formatting -->
+	<include name="homeMenuFocusedBg">
+		<control type="image">
+			<posx>0</posx>
+			<posy>460</posy>
+			<width>1300</width>
+			<height>90</height>
+			<texture flipx="true">dialogs/square_menu_background2.png</texture>
+			<animation effect="fade" start="40" end="80" time="0" condition="true">Conditional</animation>
+			<include>transition2</include>
+			<include>HomeScreenLeftMenuSlide</include>
+			<include>HomeScreenLeftMenuBgSlideFade</include>
+			<include>homeMenuFade2</include>
+			<!--><visible>Window.IsActive(0) + !ControlGroup(5000).HasFocus() + !Control.IsVisible(5000)</visible>-->
+		</control>
+	</include>
+	<include name="homeMenuUnfocused">
+		<!-- opacity -->
+		<animation effect="fade" start="100" end="100" time="350" condition="true">Conditional</animation>
+		<posx>85</posx>
+		<posy>230</posy>
+		<!--<font>geoSmall2</font>-->
+		<font>qlassikMedium</font>
+		<textcolor>ivory3</textcolor>
+		<shadowcolor>ff222222</shadowcolor>
+		<align>left</align>
+		<width>1100</width>
+	</include>
+	<include name="homeMenuFocused">
+		<posx>105</posx>
+		<posy>250</posy>
+		<!--<font>geoMiddle</font>-->
+		<font>lobsterBig</font>
+		<textcolor>oldBlue2</textcolor>
+		<shadowcolor>ff333333</shadowcolor>
+		<align>left</align>
+		<width>1100</width>
+		<!--><animation type="Focus" reversible="false">
+			<effect type="zoom" center="85,250" start="60" end="100" time="450" tween="Cubic" easing="out"/>
+			<effect type="fade" start="0" end="100" time="550"/>
+		</animation>-->
+	</include>
+	<include name="HomeMenu">
+		<!-- HOME MENU -->
+		<control type="wraplist" id="300">
+			<posx>-40</posx>
+			<posy>0</posy>
+			<width>910</width>
+			<height>660</height>
+			<onup>300</onup>
+			<ondown>300</ondown>
+			<onleft>9000</onleft>
+			<onright>5000</onright>
+			<focusposition>4</focusposition>
+			<scrolltime>300</scrolltime>
+			<include>transition2</include>
+			<include>HomeScreenLeftMenuSlide</include>
+			<include>HomeScreenLeftMenuSlideFade</include>
+			<include>homeMenuFade</include>
+			<!-- Unfocused -->
+			<itemlayout width="870" height="60">
+				<control type="group">
+					<control type="label">
+						<label>$INFO[ListItem.Label]</label>
+						<include>homeMenuUnfocused</include>
+					</control>
+				</control>
+			</itemlayout>
+			<!-- Focused -->
+			<focusedlayout width="870" height="100">
+				<control type="group">
+					<control type="label">
+						<width>870</width>
+						<label>&#xB7; $INFO[ListItem.Label] </label>
+						<include>homeMenuFocused</include>
+						<visible>IsEmpty(ListItem.Label2)</visible>
+					</control>
+					<!-- with Label2 -->
+					<control type="label">
+						<posx>105</posx>
+						<posy>240</posy>
+						<label>&#xB7; $INFO[ListItem.Label] </label>
+						<include>homeMenuFocused</include>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+					</control>
+					<control type="label">
+						<posx>165</posx>
+						<posy>280</posy>
+						<label>&#xB7; $INFO[ListItem.Label2]</label>
+						<font>qlassikSmall</font>
+						<height>30</height>
+						<textcolor>ivory2</textcolor>
+						<shadowcolor>ff333333</shadowcolor>
+						<focusedcolor>Color1</focusedcolor>
+						<align>left</align>
+						<aligny>bottom</aligny>
+						<width>278</width>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+					</control>
+				</control>
+			</focusedlayout>
+			<!-- extra items -->
+			<content>
+				<item id="4">
+					<label>$LOCALIZE[0]</label>
+					<onclick>ActivateWindow(Programs)</onclick>
+					<visible>Skin.HasSetting(showprogramsmainmenu)</visible>
+				</item>
+				<item id="22">
+					<description>Playlist</description>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/HDMovies.xsp,return)</onclick>
+					<label>HD-Filme</label>
+					<visible>!Skin.HasSetting(HomeMenuNoHDMoviesButton) + Library.HasContent(Movies)</visible>
+				</item>
+				<item id="7">
+					<description>Search Menu</description>
+					<label>$LOCALIZE[41947]</label>
+					<onclick>XBMC.ActivateWindow(10051)</onclick>
+					<!--><visible>!Skin.HasSetting(hidesearchmainmenu)</visible>-->
+				</item>
+				<item id="1">
+					<description>Video Plugins</description>
+					<label>$LOCALIZE[41981]</label>
+					<onclick>ActivateWindow(VideoFiles,Files,return)</onclick>
+					<visible>Skin.HasSetting(showvideoplugsmainmenu)</visible>
+				</item>
+				<item id="2">
+					<description>Music Plugins</description>
+					<label>$LOCALIZE[41982]</label>
+					<onclick>ActivateWindow(MyMusic)</onclick>
+					<visible>Skin.HasSetting(showmusicplugsmainmenu)</visible>
+				</item>
+				<item id="3">
+					<description>Pictures Plugins</description>
+					<label>$LOCALIZE[41983]</label>
+					<onclick>ActivateWindow(2)</onclick>
+					<visible>Skin.HasSetting(showpicturesplugsmainmenu)</visible>
+				</item>
+				<item id="12">
+					<description>Plex Online</description>
+					<label>Settings</label>
+					<onclick>ActivateWindow(Settings)</onclick>
+					<visible>Skin.HasSetting(hideplexonlinemainmenu)</visible>
+				</item>
+				<item id="9">
+					<description>Retroplex Help</description>
+					<label>$LOCALIZE[41938]</label>
+					<!--><onclick>ActivateWindow(4999)</onclick>-->
+					<onclick>Skin.ToggleSetting(showmainhelp)</onclick>
+					<visible>!Skin.HasSetting(hidehelpmainmenu)</visible>
+				</item>
+				<item id="11">
+					<label>8</label>
+					<onclick>ActivateWindow(Weather)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !Skin.HasSetting(fancode)</visible>
+				</item>
+				<item id="13">
+					<label>Filme</label>
+					<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+					<visible>true</visible>
+				</item>
+				<item id="15">
+					<label>TV-Shows</label>
+					<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+					<visible>true</visible>
+				</item>
+				<item id="10">
+					<description>DVD Button</description>
+					<label>DVD</label>
+					<visible>false</visible>
+					<onclick>XBMC.PlayDVD</onclick>
+				</item>
+				<item id="30">
+			        <description>Movie Sets</description>
+					<label>Film-Collections</label>
+					<onclick>ActivateWindow(10025,videodb://1/7/,return)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoMovieSetsButton) + Library.HasContent(Movies)</visible>
+				</item>
+			</content>
+		</control>
+	</include>
+</includes>

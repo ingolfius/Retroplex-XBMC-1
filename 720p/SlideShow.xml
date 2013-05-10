@@ -1,6 +1,0 @@
-<window id="2007">
-	<defaultcontrol>2</defaultcontrol>
-	<controls>
-		<include>musicOSDInfo</include>
-	</controls>
-</window>
